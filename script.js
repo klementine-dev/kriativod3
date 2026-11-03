@@ -1128,9 +1128,7 @@ mobileFileItems.forEach((item) => {
   item.addEventListener("click", () => {
     const section = item.dataset.section;
 
-    const tab = document.querySelector(
-      `.tab[data-section="${section}"]`,
-    );
+    const tab = document.querySelector(`.tab[data-section="${section}"]`);
 
     if (tab) {
       tab.style.display = "flex";
@@ -1188,17 +1186,14 @@ if (chatBtn) {
 // THEME TOGGLE
 // ======================================================
 const themeToggle = document.getElementById("themeToggle");
-const themeIcon = document.getElementById("themeIcon");
 
 const mobileThemeToggle = document.getElementById("mobileThemeToggle");
-const mobileThemeIcon = document.getElementById("mobileThemeIcon");
 
 const savedTheme = localStorage.getItem("theme");
 
+// The sun / moon icons are inline SVGs switched by the .light-mode class in CSS
 if (savedTheme === "light") {
   document.body.classList.add("light-mode");
-  themeIcon.src = "icons/sidebar-sun.png";
-  mobileThemeIcon.src = "icons/sidebar-sun.png";
 }
 
 themeToggle?.addEventListener("click", () => {
@@ -1206,17 +1201,7 @@ themeToggle?.addEventListener("click", () => {
 
   const isLight = document.body.classList.contains("light-mode");
 
-  if (isLight) {
-    themeIcon.src = "icons/sidebar-sun.png";
-    mobileThemeIcon.src = "icons/sidebar-sun.png";
-
-    localStorage.setItem("theme", "light");
-  } else {
-    themeIcon.src = "icons/sidebar-moon.png";
-    mobileThemeIcon.src = "icons/sidebar-moon.png";
-
-    localStorage.setItem("theme", "dark");
-  }
+  localStorage.setItem("theme", isLight ? "light" : "dark");
 });
 
 mobileThemeToggle?.addEventListener("click", () => {

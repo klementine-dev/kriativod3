@@ -4062,8 +4062,7 @@ ABOUT SECTION
 }
 /* README icon as blue ONLY inside Command Palette */
 .command-palette img[src*="simpleicons.org/markdown"] {
-  filter: brightness(0) saturate(100%)
-    invert(52%) sepia(93%) saturate(1772%)
+  filter: brightness(0) saturate(100%) invert(52%) sepia(93%) saturate(1772%)
     hue-rotate(202deg) brightness(101%) contrast(101%);
 }
 
@@ -4307,20 +4306,20 @@ ABOUT SECTION
    ====================================================== */
 
 body.light-mode {
-  --bg-base: #f5f7fb;
-  --bg-sidebar: #eef1f6;
-  --bg-explorer: #ffffff;
+  --bg-base: #f1f4fa;
+  --bg-sidebar: #dce2ec;
+  --bg-explorer: #f4f6fa;
   --bg-tab-active: #ffffff;
-  --bg-tab-inactive: #e8edf5;
-  --bg-titlebar: #e8edf5;
+  --bg-tab-inactive: #d3dae6;
+  --bg-titlebar: #d3dae6;
   --bg-card: #ffffff;
   --bg-input: #ffffff;
 
-  --text-primary: #1f2937;
-  --text-secondary: #5b6472;
-  --text-comment: #6b7280;
+  --text-primary: #111827;
+  --text-secondary: #374151;
+  --text-comment: #5b6472;
 
-  --border: #d9dee8;
+  --border: #b4bdcc;
   --border-active: #7c3aed;
 
   --accent-glow: rgba(124, 58, 237, 0.08);
@@ -4329,8 +4328,8 @@ body.light-mode {
 /* ---------- TITLE BAR ---------- */
 
 body.light-mode .title-bar {
-  background: #e8edf5;
-  border-bottom: 1px solid #d9dee8;
+  background: #d3dae6;
+  border-bottom: 1px solid #b4bdcc;
 }
 
 body.light-mode .title-bar__title {
@@ -4340,8 +4339,8 @@ body.light-mode .title-bar__title {
 /* ---------- MENU BAR ---------- */
 
 body.light-mode .menu-bar {
-  background: #f3f5f8;
-  border-bottom: 1px solid #d9dee8;
+  background: #e1e6ef;
+  border-bottom: 1px solid #b4bdcc;
 }
 
 body.light-mode .menu-bar__items span,
@@ -4358,13 +4357,13 @@ body.light-mode .title-bar__menu span:hover {
 /* ---------- EDITOR TABS ---------- */
 
 body.light-mode .editor-tabs {
-  background: #e8edf5;
-  border-color: #d9dee8;
+  background: #d3dae6;
+  border-color: #b4bdcc;
 }
 
 body.light-mode .tab {
-  background: #e8edf5;
-  color: #4b5563;
+  background: #d3dae6;
+  color: #374151;
 }
 
 body.light-mode .tab.active {
@@ -4376,7 +4375,7 @@ body.light-mode .tab.active {
 
 body.light-mode .explorer {
   background: #ffffff;
-  border-right: 1px solid #d9dee8;
+  border-right: 1px solid #b4bdcc;
 }
 
 body.light-mode .explorer__header {
@@ -4394,8 +4393,8 @@ body.light-mode .tree-item:hover {
 /* ---------- SIDEBAR ---------- */
 
 body.light-mode .sidebar-icons {
-  background: #eef1f6;
-  border-right: 1px solid #d9dee8;
+  background: #dce2ec;
+  border-right: 1px solid #b4bdcc;
 }
 
 /* ---------- ICONS ---------- */
@@ -4419,7 +4418,7 @@ body.light-mode input,
 body.light-mode textarea {
   background: #ffffff;
   color: #1f2937;
-  border-color: #d9dee8;
+  border-color: #b4bdcc;
 }
 
 body.light-mode input::placeholder,
@@ -4442,7 +4441,7 @@ body.light-mode .chat-message {
 
 body.light-mode .chat-input {
   background: #ffffff;
-  border-color: #d9dee8;
+  border-color: #b4bdcc;
 }
 
 /* ---------- CARDS ---------- */
@@ -4453,14 +4452,14 @@ body.light-mode .cert-card,
 body.light-mode .experience-card,
 body.light-mode .contact-card {
   background: #ffffff;
-  border: 1px solid #d9dee8;
+  border: 1px solid #b4bdcc;
 }
 
 /* ---------- CODE BLOCKS ---------- */
 
 body.light-mode pre,
 body.light-mode code {
-  background: #f3f5f8;
+  background: #e1e6ef;
   color: #1f2937;
 }
 
@@ -4474,11 +4473,11 @@ body.light-mode .status-bar {
 /* ---------- SCROLLBARS ---------- */
 
 body.light-mode *::-webkit-scrollbar-thumb {
-  background: #cbd5e1;
+  background: #94a3b8;
 }
 
 body.light-mode *::-webkit-scrollbar-track {
-  background: #f8fafc;
+  background: #eaeef5;
 }
 
 /* ---------- LINKS ---------- */
@@ -4496,7 +4495,7 @@ body.light-mode ::selection {
 /* ---------- LOADING ---------- */
 body.light-mode #loading-terminal {
   background: #ffffff;
-  border: 1px solid #cbd5e1;
+  border: 1px solid #94a3b8;
   color: #1f2937;
 
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
@@ -4510,9 +4509,9 @@ body.light-mode #loading-line {
    HOME LIGHT MODE FIXES
 ======================================== */
 body.light-mode .editor-preview-header {
-  background: #f8fafc;
+  background: #eaeef5;
   color: #1f2937;
-  border-bottom: 1px solid #d9dee8;
+  border-bottom: 1px solid #b4bdcc;
 }
 body.light-mode .editor-preview {
   border: 1px solid #d8b4fe;
@@ -4534,15 +4533,15 @@ body.light-mode .var {
 }
 
 body.light-mode .prop {
-  color: #0284c7;
+  color: #0369a1;
 }
 
 body.light-mode .str {
-  color: #16a34a;
+  color: #15803d;
 }
 
 body.light-mode .hero-intro {
-  color: #4b5563;
+  color: #374151;
 }
 body.light-mode .hero-heading {
   color: #7c3aed;
@@ -4553,11 +4552,11 @@ body.light-mode .code-keyword {
 }
 
 body.light-mode .code-function {
-  color: #d97706;
+  color: #b45309;
 }
 
 body.light-mode .code-string {
-  color: #16a34a;
+  color: #15803d;
 }
 
 body.light-mode img[src*="sidebar-download"] {
@@ -4592,7 +4591,7 @@ body.light-mode .markdown-file li,
 body.light-mode .markdown-file ol,
 body.light-mode .markdown-file ul,
 body.light-mode .markdown-file blockquote {
-  color: #4b5563;
+  color: #374151;
 }
 
 body.light-mode .markdown-file strong {
@@ -4605,7 +4604,7 @@ body.light-mode .markdown-file h1 {
 
 body.light-mode .markdown-file h2,
 body.light-mode .markdown-file h3 {
-  color: #60a5fa;
+  color: #1d4ed8;
 }
 
 body.light-mode .markdown-file code {
@@ -4614,23 +4613,23 @@ body.light-mode .markdown-file code {
 }
 
 body.light-mode .markdown-file pre {
-  background: #f8fafc;
+  background: #eaeef5;
   color: #1f2937;
-  border: 1px solid #d1d5db;
+  border: 1px solid #aab3c2;
 }
 
 body.light-mode hr {
   border: 0;
-  border-top: 1px solid #d1d5db;
+  border-top: 1px solid #aab3c2;
   opacity: 1;
 }
 
 body.light-mode .markdown-file blockquote {
-  border-left: 4px solid #60a5fa;
-  color: #4b5563;
+  border-left: 4px solid #1d4ed8;
+  color: #374151;
 }
 body.light-mode .readme-link {
-  color: #16a34a;
+  color: #15803d;
 }
 
 body.light-mode .readme-link:hover {
@@ -4641,15 +4640,15 @@ body.light-mode .readme-link:hover {
    ABOUT SECTION LIGHT MODE FIXES
 ======================================== */
 body.light-mode .about-paragraphs p {
-  color: #4b5563;
+  color: #374151;
   opacity: 1;
 }
 body.light-mode .about-heading span {
-  color: #a855f7;
+  color: #9333ea;
 }
 
 body.light-mode .about-heading {
-  color: #a855f7;
+  color: #9333ea;
 }
 body.light-mode .about-projects-btn,
 body.light-mode .about-chat-btn {
@@ -4681,15 +4680,15 @@ body.light-mode .about-photo:hover {
    SKILLS LIGHT MODE FIXES
 ======================================== */
 body.light-mode .skill-text {
-  color: #4b5563;
+  color: #374151;
   opacity: 1;
 }
 body.light-mode .skill-pill {
-  background: #f8fafc;
+  background: #eaeef5;
   border: 1px solid #d8b4fe;
 }
 body.light-mode .skills-group {
-  border: 1px solid #ddd6fe;
+  border: 1px solid #c4b5fd;
   background: #ffffff;
 }
 
@@ -4698,16 +4697,16 @@ body.light-mode .skills-group:hover {
 }
 
 body.light-mode .soft-skill-desc {
-  color: #72767c;
+  color: #374151;
   opacity: 1;
 }
 
 body.light-mode .section-title {
-  color: #ba7af6;
+  color: #7e22ce;
 }
 
 body.light-mode .soft-skill-title-card {
-  color: #ba7af6;
+  color: #7e22ce;
 }
 
 /* ========================================
@@ -4718,7 +4717,7 @@ body.light-mode .cert-title {
 }
 
 body.light-mode .cert-desc {
-  color: #4b5563;
+  color: #374151;
 }
 
 body.light-mode .cert-provider-pill {
@@ -4728,13 +4727,13 @@ body.light-mode .cert-provider-pill {
 }
 
 body.light-mode .tag {
-  background: #fffed8;
-  color: #cbad01;
-  border: 1px solid #c4b700;
+  background: #fef3c7;
+  color: #854d0e;
+  border: 1px solid #ca8a04;
 }
 
 body.light-mode .cert-date {
-  color: #b491ef;
+  color: #6d28d9;
 }
 
 body.light-mode .cert-link {
@@ -4743,7 +4742,7 @@ body.light-mode .cert-link {
 }
 
 body.light-mode .cert-card {
-  border: 1px solid #ddd6fe;
+  border: 1px solid #c4b5fd;
 }
 
 /* ========================================
@@ -4753,7 +4752,7 @@ body.light-mode .cert-card {
 /* Timeline cards */
 body.light-mode .timeline-card {
   background: #ffffff;
-  border: 1px solid #ddd6fe;
+  border: 1px solid #c4b5fd;
 }
 
 /* Timeline vertical line */
@@ -4763,19 +4762,19 @@ body.light-mode .timeline-modern::before {
 
 /* Timeline dots */
 body.light-mode .timeline-dot {
-  background: #a855f7;
+  background: #9333ea;
   box-shadow: none;
 }
 
 /* Dates */
 body.light-mode .timeline-date {
-  color: #a855f7;
+  color: #9333ea;
 }
 
 /* Main title */
 body.light-mode .experience-title,
 body.light-mode .experience-title .accent {
-  color: #b972fb;
+  color: #7e22ce;
 }
 
 /* Card title */
@@ -4785,12 +4784,12 @@ body.light-mode .timeline-card h3 {
 
 /* Card subtitle */
 body.light-mode .timeline-card h4 {
-  color: #c45cd4c8;
+  color: #a21caf;
 }
 
 /* Paragraphs */
 body.light-mode .timeline-card p {
-  color: #4b5563;
+  color: #374151;
   opacity: 1;
 }
 
@@ -4848,7 +4847,7 @@ body.light-mode .social-tooltip-title {
 
 /* URL / email value */
 body.light-mode .social-tooltip-url {
-  color: #4b5563;
+  color: #374151;
 }
 
 /* Contact file label */
@@ -4868,12 +4867,12 @@ body.light-mode .contact-file-name {
 
 body.light-mode .contact-form-wrapper {
   background: #ffffff;
-  border: 1px solid #ddd6fe;
+  border: 1px solid #c4b5fd;
 }
 
 body.light-mode .form-input {
   background: #fcfcfc;
-  border: 1px solid #d1d5db;
+  border: 1px solid #aab3c2;
 }
 
 /* ========================================
@@ -4882,7 +4881,7 @@ body.light-mode .form-input {
 
 body.light-mode .project-card:hover {
   transform: translateY(-4px);
-  border-color: #a855f7;
+  border-color: #9333ea;
   box-shadow: none;
 }
 
@@ -4892,7 +4891,7 @@ body.light-mode .project-card:hover {
 
 body.light-mode .command-palette {
   background: #ffffff;
-  border: 1px solid #d9dee8;
+  border: 1px solid #b4bdcc;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
 }
 
@@ -4912,8 +4911,8 @@ body.light-mode .command-palette-input::placeholder {
 }
 
 body.light-mode .command-palette-close {
-  background: #f8fafc;
-  border: 1px solid #d9dee8;
+  background: #eaeef5;
+  border: 1px solid #b4bdcc;
   color: #374151;
 }
 
@@ -4927,7 +4926,7 @@ body.light-mode .command-palette-results {
 }
 
 body.light-mode .command-group-title {
-  color: #a855f7;
+  color: #9333ea;
   opacity: 1;
 }
 
@@ -4941,12 +4940,12 @@ body.light-mode .command-result span {
 }
 
 body.light-mode .command-result:hover {
-  background: rgba(168, 85, 247, 0.08);
+  background: rgba(147, 51, 234, 0.08);
 }
 
 body.light-mode .command-result.active {
-  background: rgba(168, 85, 247, 0.12);
-  border-left: 2px solid #a855f7;
+  background: rgba(147, 51, 234, 0.12);
+  border-left: 2px solid #9333ea;
 }
 
 body.light-mode .command-result img {
@@ -4954,11 +4953,11 @@ body.light-mode .command-result img {
 }
 
 body.light-mode .command-palette-results::-webkit-scrollbar-track {
-  background: #f8fafc;
+  background: #eaeef5;
 }
 
 body.light-mode .command-palette-results::-webkit-scrollbar-thumb {
-  background: #cbd5e1;
+  background: #94a3b8;
   border-radius: 999px;
 }
 
@@ -4968,7 +4967,7 @@ body.light-mode .command-palette-results::-webkit-scrollbar-thumb {
 
 .light-mode .mobile-activity-bar {
   background: #ffffff;
-  border-top: 1px solid #d1d5db;
+  border-top: 1px solid #aab3c2;
 }
 
 .light-mode .mobile-activity-btn {
@@ -4982,7 +4981,7 @@ body.light-mode .command-palette-results::-webkit-scrollbar-thumb {
 
 .light-mode .mobile-file-sheet {
   background: #ffffff;
-  border-top: 1px solid #d1d5db;
+  border-top: 1px solid #aab3c2;
 }
 
 /* =========================================
@@ -4998,8 +4997,8 @@ body.light-mode .copilot-panel {
 /* AI messages (restore gray bubble) */
 body.light-mode .ai-message {
   background: #f3f4f6;
-  border: 1px solid #d1d5db;
-  color: #4b5563;
+  border: 1px solid #aab3c2;
+  color: #374151;
   border-radius: 12px;
   padding: 14px 16px;
 }
@@ -5023,7 +5022,7 @@ body.light-mode .user-message * {
 body.light-mode .copilot-input {
   background: #ffffff;
   color: #374151;
-  border: 1px solid #d1d5db;
+  border: 1px solid #aab3c2;
 }
 
 body.light-mode .copilot-input::placeholder {
@@ -5056,7 +5055,7 @@ body.light-mode .copilot-send-icon {
 
 /* Copilot Header */
 body.light-mode .copilot-header {
-  border-bottom: 1px solid #d9dee8;
+  border-bottom: 1px solid #b4bdcc;
 }
 
 body.light-mode .copilot-title {
@@ -5065,11 +5064,11 @@ body.light-mode .copilot-title {
 }
 
 body.light-mode .copilot-dot {
-  background: #a855f7;
+  background: #9333ea;
 }
 
 body.light-mode .copilot-close {
-  color: #94a3b8;
+  color: #64748b;
 }
 
 body.light-mode .copilot-close:hover {
@@ -5100,4 +5099,58 @@ body.light-mode .copilot-send-icon {
   background: transparent !important;
   box-shadow: none !important;
   filter: brightness(0) invert(1);
+}
+
+/* =========================================
+   LIGHT MODE - ACCENT CONTRAST
+========================================= */
+
+body.light-mode .accent,
+body.light-mode .section-title .accent {
+  color: #7e22ce;
+}
+
+body.light-mode .skill-group-title {
+  color: #6d28d9;
+  background: #f3e8ff;
+  border: 1px solid #c084fc;
+}
+
+body.light-mode .hero-name {
+  color: #9333ea;
+}
+
+/* =========================================
+   THEME TOGGLE (inline SVG sun / moon)
+========================================= */
+
+.theme-toggle {
+  color: #b8a5e8;
+  cursor: pointer;
+}
+
+.theme-icon {
+  width: 22px;
+  height: 22px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.theme-icon--sun {
+  display: none;
+}
+
+body.light-mode .theme-toggle {
+  color: #6d28d9;
+}
+
+body.light-mode .theme-icon--sun {
+  display: block;
+}
+
+body.light-mode .theme-icon--moon {
+  display: none;
 }
