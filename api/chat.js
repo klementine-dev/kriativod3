@@ -19,7 +19,11 @@ export default async function handler(req, res) {
         },
 
         body: JSON.stringify({
-          model: "meta-llama/llama-4-scout-17b-16e-instruct",
+          model: "openai/gpt-oss-120b",
+
+          // gpt-oss reasons before answering; keep it short so the reply
+          // isn't cut off by the token limit
+          reasoning_effort: "low",
 
           messages: [
             {
@@ -45,14 +49,20 @@ Be friendly, professional, and concise.
           ],
 
           temperature: 0.7,
-          max_tokens: 300,
+          max_completion_tokens: 1024,
         }),
       },
     );
 
     const data = await response.json();
 
-    console.log(data);
+    if (!response.ok) {
+      console.error("Groq error:", response.status, data);
+
+      return res.status(502).json({
+        reply: "Sorry, the assistant is unavailable right now.",
+      });
+    }
 
     const reply = data?.choices?.[0]?.message?.content || "No response.";
 
